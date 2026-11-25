@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imágenes | Un Pedacito de Cielo</title>
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      color: #f4f1ea;
+      background-color: #16212c;
+      background-image: linear-gradient(rgba(18, 28, 38, 0.80), rgba(18, 28, 38, 0.90)), url('fondo.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: 26px 20px 20px;
+      background: rgba(15, 23, 32, 0.72);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+    }
+
+    header img.logo {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      border: 2px solid #d4af37;
+      object-fit: cover;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+      color: #e6c665;
+    }
+
+    header p.lema {
+      color: #d6dce2;
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding: 14px;
+      background: rgba(12, 19, 27, 0.88);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+    }
+
+    nav a {
+      color: #e6c665;
+      text-decoration: none;
+      font-family: sans-serif;
+      font-size: 0.95rem;
+      font-weight: bold;
+    }
+
+    nav a.activa {
+      color: #fff3c4;
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 2px;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+    }
+
+    .panel-galeria {
+      background: rgba(20, 31, 43, 0.84);
+      border: 1px solid rgba(212, 175, 55, 0.38);
+      border-radius: 14px;
+      padding: 26px 22px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .encabezado-galeria {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 22px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.28);
+    }
+
+    .simbolo-luz {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(212, 175, 55, 0.14);
+      border: 1px solid rgba(212, 175, 55, 0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      color: #f4dc8c;
+      flex-shrink: 0;
+    }
+
+    .encabezado-galeria h2 {
+      color: #e6c665;
+      font-size: 1.45rem;
+    }
+
+    .encabezado-galeria span {
+      display: block;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      font-family: sans-serif;
+    }
+
+    .cuadricula-imagenes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .tarjeta-imagen {
+      background: rgba(14, 22, 31, 0.82);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .tarjeta-imagen:hover {
+      transform: translateY(-3px);
+    }
+
+    .tarjeta-imagen img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .pie-imagen {
+      padding: 14px;
+    }
+
+    .etiqueta-visual {
+      display: inline-block;
+      font-family: sans-serif;
+      font-size: 0.74rem;
+      font-weight: bold;
+      color: #e6c665;
+      background: rgba(212, 175, 55, 0.12);
+      padding: 3px 9px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+    }
+
+    .pie-imagen h3 {
+      color: #f4dc8c;
+      font-size: 1.08rem;
+      margin-bottom: 5px;
+    }
+
+    .pie-imagen p {
+      font-size: 0.9rem;
+      color: #d6dce2;
+    }
+
+    /* Visor ampliado */
+    .visor-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(8, 13, 19, 0.92);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .visor-modal.abierto {
+      display: flex;
+    }
+
+    .visor-contenido {
+      max-width: 680px;
+      width: 100%;
+      background: #141f2b;
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+      position: relative;
+    }
+
+    .visor-contenido img {
+      max-width: 100%;
+      max-height: 62vh;
+      border-radius: 10px;
+      margin-bottom: 14px;
+      object-fit: contain;
+    }
+
+    .visor-contenido h3 {
+      color: #e6c665;
+      margin-bottom: 6px;
+    }
+
+    .visor-contenido p {
+      color: #eef2f6;
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+    }
+
+    .boton-cerrar {
+      padding: 9px 22px;
+      background: #d4af37;
+      color: #141f2b;
+      border: none;
+      border-radius: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 15px;
+      background: rgba(12, 19, 27, 0.92);
+      color: #b8c2cc;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(212, 175, 55, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="Logo Un Pedacito de Cielo" class="logo">
+    <h1>Galería de Bendición</h1>
+    <p class="lema">Un Pedacito de Cielo • Imágenes que inspiran esperanza</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="reflexiones.html">Reflexiones</a>
+    <a href="imagenes.html" class="activa">Imágenes</a>
+    <a href="videos.html">Videos</a>
+  </nav>
+
+  <main>
+    <section class="panel-galeria">
+      <div class="encabezado-galeria">
+        <div class="simbolo-luz" aria-hidden="true">✦</div>
+        <div>
+          <h2>Mural de Luz y Paz</h2>
+          <span>Toca cualquier imagen para verla en tamaño completo</span>
+        </div>
+      </div>
+
+      <div class="cuadricula-imagenes">
+        <article class="tarjeta-imagen" onclick="abrirVisor('logo.jpg', 'Identidad de Fe', 'Símbolo de Un Pedacito de Cielo, un espacio dedicado a exaltar a Cristo.')">
+          <img src="logo.jpg" alt="Logo de Un Pedacito de Cielo">
+          <div class="pie-imagen">
+            <span class="etiqueta-visual">✦ Sello del Canal</span>
+            <h3>Identidad de Fe</h3>
+            <p>Nuestro emblema visual para llevar mensajes de bendición.</p>
+          </div>
+        </article>
+
+        <article class="tarjeta-imagen" onclick="abrirVisor('fondo.png', 'Cielo de Calma', 'Un cielo sereno que recuerda la grandeza y la paz de Dios sobre cada día.')">
+          <img src="fondo.png" alt="Cielo sereno en alta definición">
+          <div class="pie-imagen">
+            <span class="etiqueta-visual">✦ Horizonte Sereno</span>
+            <h3>Cielo de Calma</h3>
+            <p>Fondo limpio que invita a detenerse, respirar y confiar.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="visor-modal" id="visorModal" onclick="cerrarVisorFondo(event)">
+    <div class="visor-contenido">
+      <img id="visorImg" src="" alt="">
+      <h3 id="visorTitulo"></h3>
+      <p id="visorTexto"></p>
+      <button type="button" class="boton-cerrar" onclick="cerrarVisor()">Cerrar vista</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Un Pedacito de Cielo — Todo para la gloria de Cristo Jesús.</p>
+  </footer>
+
+  <script>
+    function abrirVisor(src, titulo, texto) {
+      document.getElementById("visorImg").src = src;
+      document.getElementById("visorTitulo").textContent = titulo;
+      document.getElementById("visorTexto").textContent = texto;
+      document.getElementById("visorModal").classList.add("abierto");
+    }
+
+    function cerrarVisor() {
+      document.getElementById("visorModal").classList.remove("abierto");
+    }
+
+    function cerrarVisorFondo(evento) {
+      if (evento.target.id === "visorModal") {
+        cerrarVisor();
+      }
+    }
+  </script>
+
+</body>
+</html>
