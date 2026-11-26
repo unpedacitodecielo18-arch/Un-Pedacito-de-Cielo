@@ -127,10 +127,112 @@
       margin: 0 auto 16px;
     }
 
-    .tarjeta-bienvenida p:last-child {
+    .tarjeta-bienvenida p.aviso-menu {
       margin-bottom: 0;
       color: #cbd5e1;
       font-size: 0.96rem;
+    }
+
+    .boton-donar {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 26px;
+      background: linear-gradient(135deg, #d4af37, #f2d574);
+      color: #141f2b;
+      font-family: sans-serif;
+      font-size: 0.95rem;
+      font-weight: bold;
+      text-decoration: none;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+    }
+
+    .modal-donacion {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(8, 13, 19, 0.9);
+      z-index: 300;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-donacion.abierto {
+      display: flex;
+    }
+
+    .caja-donacion {
+      max-width: 460px;
+      width: 100%;
+      background: #141f2b;
+      border: 1px solid rgba(212, 175, 55, 0.55);
+      border-radius: 16px;
+      padding: 24px 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .caja-donacion h3 {
+      color: #e6c665;
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+    }
+
+    .caja-donacion p {
+      color: #d6dce2;
+      font-size: 0.92rem;
+      margin-bottom: 16px;
+    }
+
+    .metodo-pago {
+      background: rgba(12, 19, 27, 0.85);
+      border: 1px solid rgba(212, 175, 55, 0.28);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      text-align: left;
+      font-family: sans-serif;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      color: #eef2f6;
+    }
+
+    .metodo-pago strong {
+      color: #f4dc8c;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .btn-copiar-dato {
+      margin-top: 8px;
+      padding: 5px 12px;
+      background: transparent;
+      color: #e6c665;
+      border: 1px solid #d4af37;
+      border-radius: 14px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-copiar-dato:hover {
+      background: #d4af37;
+      color: #141f2b;
+    }
+
+    .btn-cerrar-donacion {
+      margin-top: 10px;
+      padding: 9px 22px;
+      background: #d4af37;
+      color: #141f2b;
+      border: none;
+      border-radius: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     footer {
@@ -166,15 +268,70 @@
         Nos alegra recibirte en <strong>Un Pedacito de Cielo</strong>, un lugar creado para compartir la Palabra de Dios,
         fortalecer la fe y recordar cada día las promesas de nuestro Señor Jesucristo.
       </p>
-      <p>
+      <p class="aviso-menu">
         Usa el menú superior para recorrer nuestras reflexiones escritas, galería de imágenes y mensajes en video.
       </p>
+
+      <button type="button" class="boton-donar" onclick="abrirDonacion()">
+        ✦ Apoyar este Ministerio
+      </button>
     </section>
   </main>
+
+  <div class="modal-donacion" id="modalDonacion" onclick="cerrarDonacionFondo(event)">
+    <div class="caja-donacion">
+      <h3>Ofrenda y Apoyo</h3>
+      <p>Tu aporte voluntario ayuda a sostener este espacio y seguir compartiendo mensajes de fe.</p>
+
+      <div class="metodo-pago">
+        <strong>Pago Móvil — Bancamiga</strong>
+        Teléfono: 04242155222<br>
+        Cédula: V-27979928<br>
+        Banco: Bancamiga
+        <br>
+        <button type="button" class="btn-copiar-dato" onclick="copiarDato('Bancamiga | Tel: 04242155222 | C.I.: V-27979928')">Copiar datos Pago Móvil</button>
+      </div>
+
+      <div class="metodo-pago">
+        <strong>Binance Pay</strong>
+        ID: 1140438387
+        <br>
+        <button type="button" class="btn-copiar-dato" onclick="copiarDato('1140438387')">Copiar ID de Binance</button>
+      </div>
+
+      <button type="button" class="btn-cerrar-donacion" onclick="cerrarDonacion()">Cerrar</button>
+    </div>
+  </div>
 
   <footer>
     <p>Un Pedacito de Cielo — Todo para la gloria de Cristo Jesús.</p>
   </footer>
+
+  <script>
+    function abrirDonacion() {
+      document.getElementById("modalDonacion").classList.add("abierto");
+    }
+
+    function cerrarDonacion() {
+      document.getElementById("modalDonacion").classList.remove("abierto");
+    }
+
+    function cerrarDonacionFondo(evento) {
+      if (evento.target.id === "modalDonacion") {
+        cerrarDonacion();
+      }
+    }
+
+    function copiarDato(texto) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(texto).then(function () {
+          alert("Copiado al portapapeles: " + texto);
+        });
+      } else {
+        alert("Selecciona y copia el dato: " + texto);
+      }
+    }
+  </script>
 
 </body>
 </html>
