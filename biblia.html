@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lectura Bíblica - NTV</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2937;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem;
+      line-height: 1.75;
+    }
+    .controles {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+    select, button {
+      padding: 0.5rem 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      background: #fff;
+      color: var(--text);
+    }
+    button {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.92;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .versiculo {
+      margin-bottom: 0.65rem;
+    }
+    .num {
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 0.78em;
+      margin-right: 0.35rem;
+      vertical-align: super;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="controles">
+    <select id="select-libro" aria-label="Seleccionar libro"></select>
+    <select id="select-capitulo" aria-label="Seleccionar capítulo"></select>
+    <button id="btn-prev" type="button">← Anterior</button>
+    <button id="btn-next" type="button">Siguiente →</button>
+  </div>
+
+  <main id="contenedor-texto">
+    <p>Cargando lectura...</p>
+  </main>
+
+  <script>
+    const selectLibro = document.getElementById('select-libro');
+    const selectCapitulo = document.getElementById('select-capitulo');
+    const contenedor = document.getElementById('contenedor-texto');
+    let indice = [];
+    let libroActual = null;
+
+    async function iniciar() {
+      const res = await fetch('biblia/indice.json');
+      indice = await res.json();
+
+      const grupos = {
+        'Antiguo Testamento': document.createElement('optgroup'),
+        'Nuevo Testamento': document.createElement('optgroup')
+      };
+      grupos['Antiguo Testamento'].label = 'Antiguo Testamento';
+      grupos['Nuevo Testamento'].label = 'Nuevo Testamento';
+
+      indice.forEach((libro, idx) => {
+        const opt = document.createElement('option');
+        opt.value = idx;
+        opt.textContent = libro.nombre;
+        grupos[libro.testamento].appendChild(opt);
+      });
+
+      selectLibro.appendChild(grupos['Antiguo Testamento']);
+      selectLibro.appendChild(grupos['Nuevo Testamento']);
+
+      await cargarLibro(0, 1);
+    }
+
+    async function cargarLibro(idxLibro, capInicial = 1) {
+      const info = indice[idxLibro];
+      selectLibro.value = idxLibro;
+
+      selectCapitulo.innerHTML = '';
+      for (let i = 1; i <= info.capitulos; i++) {
+        const opt = document.createElement('option');
+        opt.value = i;
+        opt.textContent = `Capítulo ${i}`;
+        selectCapitulo.appendChild(opt);
+      }
+
+      const res = await fetch(`biblia/${info.archivo}`);
+      libroActual = await res.json();
+      mostrarCapitulo(capInicial);
+    }
+
+    function mostrarCapitulo(numCap) {
+      selectCapitulo.value = numCap;
+      const versiculos = libroActual.capitulos[numCap] || {};
+      contenedor.innerHTML = `<h1>${libroActual.nombre} ${numCap}</h1>`;
+
+      for (const [num, texto] of Object.entries(versiculos)) {
+        const p = document.createElement('p');
+        p.className = 'versiculo';
+        p.innerHTML = `<span class="num">${num}</span>${texto}`;
+        contenedor.appendChild(p);
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    selectLibro.addEventListener('change', (e) => cargarLibro(Number(e.target.value), 1));
+    selectCapitulo.addEventListener('change', (e) => mostrarCapitulo(Number(e.target.value)));
+
+    document.getElementById('btn-prev').addEventListener('click', () => {
+      const cap = Number(selectCapitulo.value);
+      const lib = Number(selectLibro.value);
+      if (cap > 1) mostrarCapitulo(cap - 1);
+      else if (lib > 0) cargarLibro(lib - 1, indice[lib - 1].capitulos);
+    });
+
+    document.getElementById('btn-next').addEventListener('click', () => {
+      const cap = Number(selectCapitulo.value);
+      const lib = Number(selectLibro.value);
+      if (cap < indice[lib].capitulos) mostrarCapitulo(cap + 1);
+      else if (lib < indice.length - 1) cargarLibro(lib + 1, 1);
+    });
+
+    iniciar();
+  </script>
+</body>
+</html>
