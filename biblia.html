@@ -1,163 +1,400 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lectura Bíblica - NTV</title>
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #1f2937;
-      --accent: #2563eb;
-      --border: #e5e7eb;
-    }
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 1rem;
-      line-height: 1.75;
-    }
-    .controles {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.5rem;
-      position: sticky;
-      top: 0;
-      background: var(--bg);
-      padding: 0.75rem 0;
-      border-bottom: 1px solid var(--border);
-      z-index: 10;
-    }
-    select, button {
-      padding: 0.5rem 0.75rem;
-      font-size: 1rem;
-      border: 1px solid #d1d5db;
-      border-radius: 6px;
-      background: #fff;
-      color: var(--text);
-    }
-    button {
-      background: var(--accent);
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      opacity: 0.92;
-    }
-    h1 {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-    }
-    .versiculo {
-      margin-bottom: 0.65rem;
-    }
-    .num {
-      font-weight: 700;
-      color: var(--accent);
-      font-size: 0.78em;
-      margin-right: 0.35rem;
-      vertical-align: super;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Biblia - Reina-Valera 1960</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #212529;
+            --primary-color: #2c3e50;
+            --accent-color: #8e6c3a;
+            --border-color: #dee2e6;
+        }
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --primary-color: #d4af37;
+            --accent-color: #c5a059;
+            --border-color: #333333;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        [data-theme="dark"] header {
+            background-color: #181818;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto 0.8rem auto;
+        }
+        .header-top h1 {
+            font-size: 1.3rem;
+            color: #ffffff;
+        }
+        [data-theme="dark"] .header-top h1 {
+            color: var(--primary-color);
+        }
+        .controls {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+        select, button {
+            padding: 0.55rem 0.8rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            font-size: 0.95rem;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            cursor: pointer;
+        }
+        select {
+            flex: 1;
+            min-width: 140px;
+        }
+        .btn-icon {
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 0.4rem 0.7rem;
+            font-size: 0.85rem;
+        }
+        main {
+            max-width: 900px;
+            margin: 1.5rem auto;
+            padding: 0 1rem 4rem 1rem;
+        }
+        .chapter-card {
+            background-color: var(--card-bg);
+            padding: 1.8rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border: 1px solid var(--border-color);
+        }
+        .chapter-title {
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        .verse {
+            margin-bottom: 0.85rem;
+            font-size: var(--font-size, 1.1rem);
+        }
+        .verse-num {
+            font-weight: bold;
+            color: var(--accent-color);
+            font-size: 0.8em;
+            vertical-align: super;
+            margin-right: 4px;
+        }
+        .nav-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            gap: 1rem;
+        }
+        .nav-footer button {
+            flex: 1;
+            background-color: var(--accent-color);
+            color: #fff;
+            border: none;
+            font-weight: 600;
+            padding: 0.75rem;
+        }
+        .nav-footer button:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        .status-msg {
+            text-align: center;
+            padding: 2rem;
+            color: #6c757d;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="controles">
-    <select id="select-libro" aria-label="Seleccionar libro"></select>
-    <select id="select-capitulo" aria-label="Seleccionar capítulo"></select>
-    <button id="btn-prev" type="button">← Anterior</button>
-    <button id="btn-next" type="button">Siguiente →</button>
-  </div>
+<header>
+    <div class="header-top">
+        <h1>📖 Santa Biblia</h1>
+        <div>
+            <button class="btn-icon" onclick="changeFontSize(-0.1)" title="Reducir letra">A-</button>
+            <button class="btn-icon" onclick="changeFontSize(0.1)" title="Aumentar letra">A+</button>
+            <button class="btn-icon" onclick="toggleTheme()" id="themeBtn">🌙</button>
+        </div>
+    </div>
+    <div class="controls">
+        <select id="bookSelect" onchange="loadBook()">
+            <option value="">Selecciona un libro...</option>
+        </select>
+        <select id="chapterSelect" onchange="renderChapter()" disabled>
+            <option value="">Capítulo</option>
+        </select>
+    </div>
+</header>
 
-  <main id="contenedor-texto">
-    <p>Cargando lectura...</p>
-  </main>
+<main>
+    <div class="chapter-card" id="readerContainer">
+        <div class="status-msg">Cargando libros de la Biblia...</div>
+    </div>
+    <div class="nav-footer">
+        <button id="prevBtn" onclick="prevChapter()" disabled>⬅ Anterior</button>
+        <button id="nextBtn" onclick="nextChapter()" disabled>Siguiente ➡</button>
+    </div>
+</main>
 
-  <script>
-    const selectLibro = document.getElementById('select-libro');
-    const selectCapitulo = document.getElementById('select-capitulo');
-    const contenedor = document.getElementById('contenedor-texto');
-    let indice = [];
-    let libroActual = null;
+<script>
+    // Lista estándar de los 66 libros de la Biblia y sus posibles nombres de archivo en la raíz (./archivo.json)
+    const BOOKS = [
+        { name: "Génesis", file: "genesis.json" },
+        { name: "Éxodo", file: "exodo.json" },
+        { name: "Levítico", file: "levitico.json" },
+        { name: "Números", file: "numeros.json" },
+        { name: "Deuteronomio", file: "deuteronomio.json" },
+        { name: "Josué", file: "josue.json" },
+        { name: "Jueces", file: "jueces.json" },
+        { name: "Rut", file: "rut.json" },
+        { name: "1 Samuel", file: "1_samuel.json" },
+        { name: "2 Samuel", file: "2_samuel.json" },
+        { name: "1 Reyes", file: "1_reyes.json" },
+        { name: "2 Reyes", file: "2_reyes.json" },
+        { name: "1 Crónicas", file: "1_cronicas.json" },
+        { name: "2 Crónicas", file: "2_cronicas.json" },
+        { name: "Esdras", file: "esdras.json" },
+        { name: "Nehemías", file: "nehemias.json" },
+        { name: "Ester", file: "ester.json" },
+        { name: "Job", file: "job.json" },
+        { name: "Salmos", file: "salmos.json" },
+        { name: "Proverbios", file: "proverbios.json" },
+        { name: "Eclesiastés", file: "eclesiastes.json" },
+        { name: "Cantares", file: "cantares.json" },
+        { name: "Isaías", file: "isaias.json" },
+        { name: "Jeremías", file: "jeremias.json" },
+        { name: "Lamentaciones", file: "lamentaciones.json" },
+        { name: "Ezequiel", file: "ezequiel.json" },
+        { name: "Daniel", file: "daniel.json" },
+        { name: "Oseas", file: "oseas.json" },
+        { name: "Joel", file: "joel.json" },
+        { name: "Amós", file: "amos.json" },
+        { name: "Abdías", file: "abdias.json" },
+        { name: "Jonás", file: "jonas.json" },
+        { name: "Miqueas", file: "miqueas.json" },
+        { name: "Nahúm", file: "nahum.json" },
+        { name: "Habacuc", file: "habacuc.json" },
+        { name: "Sofonías", file: "sofonias.json" },
+        { name: "Hageo", file: "hageo.json" },
+        { name: "Zacarías", file: "zacarias.json" },
+        { name: "Malaquías", file: "malaquias.json" },
+        { name: "Mateo", file: "mateo.json" },
+        { name: "Marcos", file: "marcos.json" },
+        { name: "Lucas", file: "lucas.json" },
+        { name: "Juan", file: "juan.json" },
+        { name: "Hechos", file: "hechos.json" },
+        { name: "Romanos", file: "romanos.json" },
+        { name: "1 Corintios", file: "1_corintios.json" },
+        { name: "2 Corintios", file: "2_corintios.json" },
+        { name: "Gálatas", file: "galatas.json" },
+        { name: "Efesios", file: "efesios.json" },
+        { name: "Filipenses", file: "filipenses.json" },
+        { name: "Colosenses", file: "colosenses.json" },
+        { name: "1 Tesalonicenses", file: "1_tesalonicenses.json" },
+        { name: "2 Tesalonicenses", file: "2_tesalonicenses.json" },
+        { name: "1 Timoteo", file: "1_timoteo.json" },
+        { name: "2 Timoteo", file: "2_timoteo.json" },
+        { name: "Tito", file: "tito.json" },
+        { name: "Filemón", file: "filemon.json" },
+        { name: "Hebreos", file: "hebreos.json" },
+        { name: "Santiago", file: "santiago.json" },
+        { name: "1 Pedro", file: "1_pedro.json" },
+        { name: "2 Pedro", file: "2_pedro.json" },
+        { name: "1 Juan", file: "1_juan.json" },
+        { name: "2 Juan", file: "2_juan.json" },
+        { name: "3 Juan", file: "3_juan.json" },
+        { name: "Judas", file: "judas.json" },
+        { name: "Apocalipsis", file: "apocalipsis.json" }
+    ];
 
-    async function iniciar() {
-      const res = await fetch('biblia/indice.json');
-      indice = await res.json();
+    let currentBookData = null;
+    let currentBookName = "";
+    let currentFontSize = 1.1;
 
-      const grupos = {
-        'Antiguo Testamento': document.createElement('optgroup'),
-        'Nuevo Testamento': document.createElement('optgroup')
-      };
-      grupos['Antiguo Testamento'].label = 'Antiguo Testamento';
-      grupos['Nuevo Testamento'].label = 'Nuevo Testamento';
+    const bookSelect = document.getElementById("bookSelect");
+    const chapterSelect = document.getElementById("chapterSelect");
+    const readerContainer = document.getElementById("readerContainer");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
 
-      indice.forEach((libro, idx) => {
-        const opt = document.createElement('option');
-        opt.value = idx;
-        opt.textContent = libro.nombre;
-        grupos[libro.testamento].appendChild(opt);
-      });
-
-      selectLibro.appendChild(grupos['Antiguo Testamento']);
-      selectLibro.appendChild(grupos['Nuevo Testamento']);
-
-      await cargarLibro(0, 1);
+    function init() {
+        BOOKS.forEach((book, idx) => {
+            const opt = document.createElement("option");
+            opt.value = idx;
+            opt.textContent = book.name;
+            bookSelect.appendChild(opt);
+        });
+        bookSelect.value = "0";
+        loadBook();
     }
 
-    async function cargarLibro(idxLibro, capInicial = 1) {
-      const info = indice[idxLibro];
-      selectLibro.value = idxLibro;
-
-      selectCapitulo.innerHTML = '';
-      for (let i = 1; i <= info.capitulos; i++) {
-        const opt = document.createElement('option');
-        opt.value = i;
-        opt.textContent = `Capítulo ${i}`;
-        selectCapitulo.appendChild(opt);
-      }
-
-      const res = await fetch(`biblia/${info.archivo}`);
-      libroActual = await res.json();
-      mostrarCapitulo(capInicial);
+    // Normaliza distintas estructuras comunes de JSON bíblicos a un arreglo de capítulos con versículos
+    function normalizeChapters(data) {
+        // Caso 1: Objeto con propiedad 'chapters' o 'capitulos'
+        if (data && !Array.isArray(data)) {
+            if (Array.isArray(data.chapters)) return normalizeChapters(data.chapters);
+            if (Array.isArray(data.capitulos)) return normalizeChapters(data.capitulos);
+            // Caso 2: Objeto con claves "1", "2", ...
+            const keys = Object.keys(data).filter(k => !isNaN(k)).sort((a,b) => Number(a) - Number(b));
+            if (keys.length > 0) {
+                return keys.map(k => data[k]);
+            }
+        }
+        // Caso 3: Arreglo directo de capítulos
+        if (Array.isArray(data)) {
+            return data.map(ch => {
+                if (Array.isArray(ch)) return ch;
+                if (ch && Array.isArray(ch.verses)) return ch.verses;
+                if (ch && Array.isArray(ch.versiculos)) return ch.versiculos;
+                if (ch && typeof ch === "object") {
+                    const vKeys = Object.keys(ch).filter(k => !isNaN(k)).sort((a,b) => Number(a) - Number(b));
+                    return vKeys.map(vk => ch[vk]);
+                }
+                return [];
+            });
+        }
+        return [];
     }
 
-    function mostrarCapitulo(numCap) {
-      selectCapitulo.value = numCap;
-      const versiculos = libroActual.capitulos[numCap] || {};
-      contenedor.innerHTML = `<h1>${libroActual.nombre} ${numCap}</h1>`;
+    async function loadBook() {
+        const idx = bookSelect.value;
+        if (idx === "") return;
 
-      for (const [num, texto] of Object.entries(versiculos)) {
-        const p = document.createElement('p');
-        p.className = 'versiculo';
-        p.innerHTML = `<span class="num">${num}</span>${texto}`;
-        contenedor.appendChild(p);
-      }
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+        const book = BOOKS[idx];
+        currentBookName = book.name;
+        readerContainer.innerHTML = `<div class="status-msg">Cargando <strong>${book.name}</strong> desde la raíz (<code>./${book.file}</code>)...</div>`;
+        chapterSelect.disabled = true;
+
+        try {
+            // Carga directa desde la raíz (sin subcarpeta)
+            const response = await fetch(`./${book.file}`);
+            if (!response.ok) throw new Error(`No se encontró ${book.file} en la raíz`);
+            const rawData = await response.json();
+            
+            currentBookData = normalizeChapters(rawData);
+
+            chapterSelect.innerHTML = "";
+            currentBookData.forEach((_, i) => {
+                const opt = document.createElement("option");
+                opt.value = i;
+                opt.textContent = `Capítulo ${i + 1}`;
+                chapterSelect.appendChild(opt);
+            });
+
+            chapterSelect.disabled = false;
+            chapterSelect.value = "0";
+            renderChapter();
+        } catch (err) {
+            readerContainer.innerHTML = `
+                <div class="status-msg">
+                    <p>⚠️ No se pudo cargar el archivo <strong>${book.file}</strong> en la raíz.</p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Verifica que todos tus archivos <code>.json</code> estén subidos exactamente junto a <code>biblia.html</code> (en la misma carpeta raíz) y que sus nombres coincidan en minúsculas y sin tildes (ej. <code>genesis.json</code>, <code>1_samuel.json</code>).</p>
+                </div>`;
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
+        }
     }
 
-    selectLibro.addEventListener('change', (e) => cargarLibro(Number(e.target.value), 1));
-    selectCapitulo.addEventListener('change', (e) => mostrarCapitulo(Number(e.target.value)));
+    function renderChapter() {
+        const chIdx = parseInt(chapterSelect.value, 10);
+        if (isNaN(chIdx) || !currentBookData || !currentBookData[chIdx]) return;
 
-    document.getElementById('btn-prev').addEventListener('click', () => {
-      const cap = Number(selectCapitulo.value);
-      const lib = Number(selectLibro.value);
-      if (cap > 1) mostrarCapitulo(cap - 1);
-      else if (lib > 0) cargarLibro(lib - 1, indice[lib - 1].capitulos);
-    });
+        const verses = currentBookData[chIdx];
+        let html = `<h2 class="chapter-title">${currentBookName} ${chIdx + 1}</h2>`;
 
-    document.getElementById('btn-next').addEventListener('click', () => {
-      const cap = Number(selectCapitulo.value);
-      const lib = Number(selectLibro.value);
-      if (cap < indice[lib].capitulos) mostrarCapitulo(cap + 1);
-      else if (lib < indice.length - 1) cargarLibro(lib + 1, 1);
-    });
+        verses.forEach((v, i) => {
+            let vNum = i + 1;
+            let vText = "";
 
-    iniciar();
-  </script>
+            if (typeof v === "string") {
+                vText = v;
+            } else if (v && typeof v === "object") {
+                vNum = v.verse || v.versiculo || v.number || v.num || (i + 1);
+                vText = v.text || v.texto || v.content || "";
+            }
+
+            html += `<p class="verse"><span class="verse-num">${vNum}</span>${vText}</p>`;
+        });
+
+        readerContainer.innerHTML = html;
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
+        prevBtn.disabled = chIdx <= 0;
+        nextBtn.disabled = chIdx >= currentBookData.length - 1;
+    }
+
+    function prevChapter() {
+        const current = parseInt(chapterSelect.value, 10);
+        if (current > 0) {
+            chapterSelect.value = current - 1;
+            renderChapter();
+        }
+    }
+
+    function nextChapter() {
+        const current = parseInt(chapterSelect.value, 10);
+        if (currentBookData && current < currentBookData.length - 1) {
+            chapterSelect.value = current + 1;
+            renderChapter();
+        }
+    }
+
+    function changeFontSize(delta) {
+        currentFontSize = Math.min(1.8, Math.max(0.85, currentFontSize + delta));
+        document.documentElement.style.setProperty("--font-size", `${currentFontSize}rem`);
+    }
+
+    function toggleTheme() {
+        const html = document.documentElement;
+        const btn = document.getElementById("themeBtn");
+        if (html.getAttribute("data-theme") === "dark") {
+            html.removeAttribute("data-theme");
+            btn.textContent = "🌙";
+        } else {
+            html.setAttribute("data-theme", "dark");
+            btn.textContent = "☀️";
+        }
+    }
+
+    init();
+</script>
+
 </body>
 </html>
