@@ -1,0 +1,19 @@
+{
+  "nombre": "Joel",
+  "testamento": "Antiguo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "El SEÑOR le dio el siguiente mensaje a Joel, hijo de Petuel."
+    },
+    "2": {
+      "1": "¡Toquen alarma en Jerusalén! ¡Den el grito de guerra en mi monte santo! Que todos tiemblen de miedo porque está cerca el día del SEÑOR.",
+      "2": "Es un día de oscuridad y penumbra, un día de nubes densas y sombras profundas. De repente, como el amanecer se extiende sobre las montañas, aparece un ejército grande y poderoso. Nunca antes se había visto algo semejante, ni volverá a verse jamás."
+    },
+    "3": {
+      "1": "En el tiempo de esos acontecimientos —dice el SEÑOR —, cuando yo restaure la prosperidad de Judá y de Jerusalén,",
+      "2": "reuniré a los ejércitos del mundo en el valle de Josafat. Allí los juzgaré por hacerle daño a mi pueblo, mi posesión más preciada, por dispersar a mi pueblo entre las naciones y por dividir mi tierra.",
+      "3": "Tiraron los dados para decidir quiénes de mi pueblo serían sus esclavos. Canjearon niños por prostitutas y vendieron niñas por tan sólo suficiente vino para emborracharse."
+    },
+    "4": {}
+  }
+}

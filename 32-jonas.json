@@ -1,0 +1,14 @@
+{
+  "nombre": "Jonás",
+  "testamento": "Antiguo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Entonces Jonás oró al SEÑOR su Dios desde el interior del pez"
+    },
+    "2": {
+      "1": "El SEÑOR habló por segunda vez a Jonás:",
+      "2": "Levántate y ve a la gran ciudad de Nínive y entrega el mensaje que te he dado."
+    },
+    "3": {}
+  }
+}

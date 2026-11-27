@@ -1,0 +1,19 @@
+{
+  "nombre": "2 Tesalonicenses",
+  "testamento": "Nuevo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Nosotros, Pablo, Silas y Timoteo, escribimos esta carta a la iglesia en Tesalónica, a ustedes que pertenecen a Dios nuestro Padre y al Señor Jesucristo."
+    },
+    "2": {
+      "1": "Ahora, amados hermanos, aclaremos algunos aspectos sobre la venida de nuestro Señor Jesucristo y cómo seremos reunidos para encontrarnos con él.",
+      "2": "No se dejen perturbar ni se alarmen tan fácilmente por los que dicen que el día del Señor ya ha comenzado. No les crean, ni siquiera si afirman haber tenido una visión espiritual, una revelación o haber recibido una carta supuestamente de nosotros."
+    },
+    "3": {
+      "1": "Finalmente, amados hermanos, les pedimos que oren por nosotros. Oren para que el mensaje del Señor se difunda rápidamente y sea honrado en todo lugar adonde llegue, así como cuando les llegó a ustedes.",
+      "2": "Oren, también, para que seamos rescatados de gente perversa y mala, porque no todos son creyentes.",
+      "3": "Pero el Señor es fiel; él los fortalecerá y los protegerá del maligno."
+    },
+    "4": {}
+  }
+}

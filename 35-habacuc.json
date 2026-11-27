@@ -1,0 +1,18 @@
+{
+  "nombre": "Habacuc",
+  "testamento": "Antiguo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Este es el mensaje que el profeta Habacuc recibió en una visión."
+    },
+    "2": {
+      "1": "Subiré a mi torre de vigilancia y montaré guardia. Allí esperaré hasta ver qué dice el SEÑOR y cómo responderá a mi queja. Segunda respuesta del SEÑOR 2 Entonces el SEÑOR me dijo: Escribe mi respuesta con claridad en tablas, para que un corredor pueda llevar a otros el mensaje sin error."
+    },
+    "3": {
+      "1": "Esta oración fue entonada por el profeta Habacuc:",
+      "2": "He oído todo acerca de ti, SEÑOR. Estoy maravillado por tus hechos asombrosos. En este momento de profunda necesidad, ayúdanos otra vez como lo hiciste en el pasado. Y en tu enojo, recuerda tu misericordia.",
+      "3": "¡Veo a Dios cruzando el desierto de Edom, el Santo viene desde el monte Parán! Su brillante esplendor llena los cielos y la tierra se llena de su alabanza."
+    },
+    "4": {}
+  }
+}

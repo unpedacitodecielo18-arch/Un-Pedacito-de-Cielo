@@ -1,0 +1,25 @@
+{
+  "nombre": "Lamentaciones",
+  "testamento": "Antiguo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Jerusalén, antes colmada de gente, ahora está desierta. La que en su día fue grande entre las naciones ahora queda sola como una viuda. La que antes era la reina de toda la tierra, ahora es una esclava."
+    },
+    "2": {
+      "1": "En su enojo el Señor cubrió de sombras a la bella Jerusalén. La más hermosa de las ciudades de Israel yace en el polvo, derrumbada desde las alturas del cielo. En su día de gran enojo el Señor no mostró misericordia ni siquiera con su templo.",
+      "2": "El Señor ha destruido sin misericordia todas las casas en Israel. En su enojo derribó las murallas protectoras de la bella Jerusalén. Las derrumbó hasta el suelo y deshonró al reino y a sus gobernantes."
+    },
+    "3": {
+      "1": "¡Cómo perdió su brillo el oro! Hasta el oro más preciado se volvió opaco. ¡Las piedras preciosas sagradas yacen esparcidas en las calles!",
+      "2": "Miren cómo los preciosos hijos de Jerusalén, que valen su peso en oro puro, ahora son tratados como vasijas de barro hechas por un alfarero común y corriente.",
+      "3": "Hasta los chacales amamantan a sus cachorros, pero mi pueblo Israel no lo hace;"
+    },
+    "4": {
+      "1": "SEÑOR, recuerda lo que nos ha sucedido. ¡Mira cómo hemos sido deshonrados!",
+      "2": "Se entregó nuestra herencia a extraños; nuestras casas, a extranjeros.",
+      "3": "Somos huérfanos, sin padre, y nuestras madres son viudas.",
+      "4": "Tenemos que pagar por el agua que bebemos, y hasta la leña es costosa."
+    },
+    "5": {}
+  }
+}

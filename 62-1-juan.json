@@ -1,0 +1,32 @@
+{
+  "nombre": "1 Juan",
+  "testamento": "Nuevo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Les anunciamos al que existe desde el principio, a quien hemos visto y oído. Lo vimos con nuestros propios ojos y lo tocamos con nuestras propias manos. Él es la Palabra de vida."
+    },
+    "2": {
+      "1": "Mis queridos hijos, les escribo estas cosas, para que no pequen; pero si alguno peca, tenemos un abogado que defiende nuestro caso ante el Padre. Es Jesucristo, el que es verdaderamente justo.",
+      "2": "Él mismo es el sacrificio que pagó por nuestros pecados, y no sólo los nuestros sino también los de todo el mundo."
+    },
+    "3": {
+      "1": "Miren con cuánto amor nos ama nuestro Padre que nos llama sus hijos, ¡y eso es lo que somos! Pero la gente de este mundo no reconoce que somos hijos de Dios, porque no lo conocen a él.",
+      "2": "Queridos amigos, ya somos hijos de Dios, pero él todavía no nos ha mostrado lo que seremos cuando Cristo venga; pero sí sabemos que seremos como él, porque lo veremos tal como él es.",
+      "3": "Y todos los que tienen esta gran expectativa se mantendrán puros, así como él es puro."
+    },
+    "4": {
+      "1": "Queridos amigos, no les crean a todos los que afirman hablar de parte del Espíritu. Pónganlos a prueba para averiguar si el espíritu que tienen realmente proviene de Dios, porque hay muchos falsos profetas en el mundo.",
+      "2": "Esta es la manera en que sabremos si tienen o no el Espíritu de Dios: si una persona que afirma ser profeta reconoce que Jesucristo vino en un cuerpo humano, esa persona tiene el Espíritu de Dios;",
+      "3": "pero si alguien afirma ser profeta y no reconoce la verdad acerca de Jesús, aquella persona no es de Dios. Tal persona tiene el espíritu del Anticristo, del cual ustedes oyeron que viene al mundo, y de hecho, ya está aquí.",
+      "4": "Pero ustedes, mis queridos hijos, pertenecen a Dios. Ya lograron la victoria sobre esas personas, porque el Espíritu que vive en ustedes es más poderoso que el espíritu que vive en el mundo."
+    },
+    "5": {
+      "1": "Todo el que cree que Jesús es el Cristo ha llegado a ser un hijo de Dios. Y todo el que ama al Padre ama también a los hijos nacidos de él.",
+      "2": "Sabemos que amamos a los hijos de Dios si amamos a Dios y obedecemos sus mandamientos.",
+      "3": "Amar a Dios significa obedecer sus mandamientos, y sus mandamientos no son una carga difícil de llevar.",
+      "4": "Pues todo hijo de Dios vence a este mundo de maldad, y logramos esa victoria por medio de nuestra fe.",
+      "5": "¿Y quién puede ganar esta batalla contra el mundo? Únicamente los que creen que Jesús es el Hijo de Dios."
+    },
+    "6": {}
+  }
+}

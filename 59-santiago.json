@@ -1,0 +1,32 @@
+{
+  "nombre": "Santiago",
+  "testamento": "Nuevo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Yo, Santiago, esclavo de Dios y del Señor Jesucristo, escribo esta carta a las doce tribus: los creyentes judíos que están dispersos por el mundo. ¡Reciban mis saludos!"
+    },
+    "2": {
+      "1": "Mis amados hermanos, ¿cómo pueden afirmar que tienen fe en nuestro glorioso Señor Jesucristo si favorecen más a algunas personas que a otras?",
+      "2": "Por ejemplo, supongamos que alguien llega a su reunión vestido con ropa elegante y joyas costosas y al mismo tiempo entra una persona pobre y con ropa sucia."
+    },
+    "3": {
+      "1": "Amados hermanos, no muchos deberían llegar a ser maestros en la iglesia, porque los que enseñamos seremos juzgados de una manera más estricta.",
+      "2": "Es cierto que todos cometemos muchos errores. Pues, si pudiéramos dominar la lengua, seríamos perfectos, capaces de controlarnos en todo sentido.",
+      "3": "Podemos hacer que un caballo vaya adonde queramos si le ponemos un pequeño freno en la boca."
+    },
+    "4": {
+      "1": "¿Qué es lo que causa las disputas y las peleas entre ustedes? ¿Acaso no surgen de los malos deseos que combaten en su interior?",
+      "2": "Desean lo que no tienen, entonces traman y hasta matan para conseguirlo. Envidian lo que otros tienen, pero no pueden obtenerlo, por eso luchan y les hacen la guerra para quitárselo. Sin embargo, no tienen lo que desean porque no se lo piden a Dios.",
+      "3": "Aun cuando se lo piden, tampoco lo reciben porque lo piden con malas intenciones: desean solamente lo que les dará placer.",
+      "4": "¡Adúlteros! ¿No se dan cuenta de que la amistad con el mundo los convierte en enemigos de Dios? Lo repito: si alguien quiere ser amigo del mundo, se hace enemigo de Dios."
+    },
+    "5": {
+      "1": "Presten atención, ustedes los ricos: lloren y giman con angustia por todas las calamidades que les esperan.",
+      "2": "Su riqueza se está pudriendo, y su ropa fina son trapos carcomidos por polillas.",
+      "3": "Su oro y plata han perdido su valor. Las mismas riquezas con las que contaban les consumirán la carne como lo hace el fuego. El tesoro que han acumulado se usará como evidencia contra ustedes el día del juicio.",
+      "4": "Así que ¡escuchen! Oigan las protestas de los obreros del campo a quienes estafaron con el salario. El dinero que no les pagaron clama en contra de ustedes. Los reclamos de quienes les cosechan sus campos han llegado a los oídos del SEÑOR de los Ejércitos Celestiales.",
+      "5": "Sus años sobre la tierra los han pasado con lujos, satisfaciendo todos y cada uno de sus deseos. Se han dejado engordar para el día de la matanza."
+    },
+    "6": {}
+  }
+}

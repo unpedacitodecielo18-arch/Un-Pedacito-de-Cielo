@@ -1,0 +1,19 @@
+{
+  "nombre": "2 Pedro",
+  "testamento": "Nuevo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Yo, Simón Pedro, esclavo y apóstol de Jesucristo, les escribo esta carta a ustedes, que gozan de la misma preciosa fe que tenemos. Esta fe les fue concedida debido a la justicia e imparcialidad de Jesucristo, nuestro Dios y Salvador."
+    },
+    "2": {
+      "1": "En Israel también hubo falsos profetas, tal como habrá falsos maestros entre ustedes. Ellos les enseñarán con astucia herejías destructivas y hasta negarán al Señor, quien los compró. Esto provocará su propia destrucción repentina.",
+      "2": "Habrá muchos que seguirán sus malas enseñanzas y su vergonzosa inmoralidad;"
+    },
+    "3": {
+      "1": "Queridos amigos, esta es la segunda carta que les escribo y, en ambas, he tratado de refrescarles la memoria y estimularlos a que sigan pensando sanamente.",
+      "2": "Quiero que recuerden lo que los santos profetas dijeron hace mucho y lo que nuestro Señor y Salvador ordenó por medio de los apóstoles.",
+      "3": "Sobre todo, quiero recordarles que, en los últimos días, vendrán burladores que se reirán de la verdad y seguirán sus propios deseos."
+    },
+    "4": {}
+  }
+}

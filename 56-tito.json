@@ -1,0 +1,19 @@
+{
+  "nombre": "Tito",
+  "testamento": "Nuevo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Yo, Pablo, esclavo de Dios y apóstol de Jesucristo, escribo esta carta. Fui enviado para proclamar fe a los que Dios ha elegido y para enseñarles a conocer la verdad que les muestra cómo vivir una vida dedicada a Dios."
+    },
+    "2": {
+      "1": "Tito, en cuanto a ti, fomenta la clase de vida que refleje la sana enseñanza.",
+      "2": "Enseña a los hombres mayores a ejercitar el control propio, a ser dignos de respeto y a vivir sabiamente. Deben tener una fe sólida y estar llenos de amor y paciencia."
+    },
+    "3": {
+      "1": "Recuérdales a los creyentes que se sometan al gobierno y a sus funcionarios.",
+      "2": "No deben calumniar a nadie y tienen que evitar pleitos. En cambio, deben ser amables y mostrar verdadera humildad en el trato con todos.",
+      "3": "En otro tiempo nosotros también éramos necios y desobedientes. Fuimos engañados y nos convertimos en esclavos de toda clase de pasiones y placeres."
+    },
+    "4": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "nombre": "Nahum",
+  "testamento": "Antiguo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Este mensaje sobre Nínive vino como una visión a Nahúm, que vivía en Elcos."
+    },
+    "2": {
+      "1": "Nínive, tu enemigo viene para aplastarte. ¡A las murallas! ¡Vigila los caminos! ¡Prepara tus defensas! ¡Reúne a tus fuerzas armadas!",
+      "2": "Aunque el destructor arrasó con Judá, el SEÑOR restaurará su honor. A la vid de Israel le arrancaron las ramas, pero él restaurará su esplendor."
+    },
+    "3": {
+      "1": "¡Qué aflicción le espera a Nínive, la ciudad de crímenes y mentiras! Está saturada de riquezas y nunca le faltan víctimas.",
+      "2": "¡Oigan el chasquido de los látigos y el retumbo de las ruedas! Los cascos de los caballos retumban y los carros de guerra traquetean sin control.",
+      "3": "¡Miren cómo destellan las espadas y brillan las lanzas cuando pasa la caballería! Hay muertos incontables, hay montones de cadáveres, tantos que la gente tropieza con ellos."
+    },
+    "4": {}
+  }
+}

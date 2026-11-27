@@ -1,0 +1,32 @@
+{
+  "nombre": "1 Pedro",
+  "testamento": "Nuevo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Yo, Pedro, apóstol de Jesucristo, escribo esta carta a los elegidos por Dios que viven como extranjeros en las provincias de Ponto, Galacia, Capadocia, Asia y Bitinia."
+    },
+    "2": {
+      "1": "Por lo tanto, desháganse de toda mala conducta. Acaben con todo engaño, hipocresía, celos y toda clase de comentarios hirientes.",
+      "2": "Como bebés recién nacidos, deseen con ganas la leche espiritual pura para que crezcan a una experiencia plena de la salvación. Pidan a gritos ese alimento nutritivo"
+    },
+    "3": {
+      "1": "De la misma manera, ustedes esposas, tienen que aceptar la autoridad de sus esposos. Entonces, aun cuando alguno de ellos se niegue a obedecer la Buena Noticia, la vida recta de ustedes les hablará sin palabras. Ellos serán ganados",
+      "2": "al observar la vida pura y la conducta respetuosa de ustedes.",
+      "3": "No se interesen tanto por la belleza externa: los peinados extravagantes, las joyas costosas o la ropa elegante."
+    },
+    "4": {
+      "1": "Por lo tanto, ya que Cristo sufrió dolor en su cuerpo, ustedes prepárense, adoptando la misma actitud que tuvo él y estén listos para sufrir también. Pues, si han sufrido físicamente por Cristo, han terminado con el pecado.",
+      "2": "No pasarán el resto de la vida siguiendo sus propios deseos, sino que estarán ansiosos de hacer la voluntad de Dios.",
+      "3": "En el pasado, han tenido más que suficiente de las cosas perversas que les gusta hacer a los que no tienen a Dios: inmoralidad y pasiones sexuales, parrandas, borracheras, fiestas desenfrenadas y abominable adoración a ídolos.",
+      "4": "No es de extrañarse que sus amigos de la vieja vida se sorprendan de que ustedes ya no participan en las cosas destructivas y descontroladas que ellos hacen."
+    },
+    "5": {
+      "1": "Y ahora, una palabra para ustedes los ancianos en las iglesias. También soy un anciano y testigo de los sufrimientos de Cristo. Y yo también voy a participar de su gloria cuando él sea revelado a todo el mundo. Como anciano igual que ustedes, les ruego:",
+      "2": "cuiden del rebaño que Dios les ha encomendado. Háganlo con gusto, no de mala gana ni por el beneficio personal que puedan obtener de ello, sino porque están deseosos de servir a Dios.",
+      "3": "No abusen de la autoridad que tienen sobre los que están a su cargo, sino guíenlos con su buen ejemplo.",
+      "4": "Así, cuando venga el Gran Pastor, recibirán una corona de gloria y honor eternos.",
+      "5": "Del mismo modo, ustedes hombres más jóvenes tienen que aceptar la autoridad de los ancianos. Y todos sírvanse unos a otros con humildad, porqueDios se opone a los orgullosos pero muestra su favor a los humildes."
+    },
+    "6": {}
+  }
+}

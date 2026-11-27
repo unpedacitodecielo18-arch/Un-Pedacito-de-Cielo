@@ -1,0 +1,25 @@
+{
+  "nombre": "Colosenses",
+  "testamento": "Nuevo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Yo, Pablo, elegido por la voluntad de Dios para ser apóstol de Cristo Jesús, y nuestro hermano Timoteo"
+    },
+    "2": {
+      "1": "Quiero que sepan cuánta angustia he sufrido por ustedes y por la iglesia en Laodicea y por muchos otros creyentes que nunca me conocieron personalmente.",
+      "2": "Quiero que ellos cobren ánimo y estén bien unidos con fuertes lazos de amor. Quiero que tengan la plena confianza de que entienden el misterioso plan de Dios, que es Cristo mismo."
+    },
+    "3": {
+      "1": "Ya que han sido resucitados a una vida nueva con Cristo, pongan la mira en las verdades del cielo, donde Cristo está sentado en el lugar de honor, a la derecha de Dios.",
+      "2": "Piensen en las cosas del cielo, no en las de la tierra.",
+      "3": "Pues ustedes han muerto a esta vida, y su verdadera vida está escondida con Cristo en Dios."
+    },
+    "4": {
+      "1": "Amos, sean justos e imparciales con sus esclavos. Recuerden que ustedes también tienen un Amo en el cielo.",
+      "2": "Dedíquense a la oración con una mente alerta y un corazón agradecido.",
+      "3": "Oren también por nosotros, para que Dios nos dé muchas oportunidades para hablar de su misterioso plan acerca de Cristo. Por eso estoy aquí en cadenas.",
+      "4": "Oren para que pueda proclamar ese mensaje con la claridad que debo hacerlo."
+    },
+    "5": {}
+  }
+}

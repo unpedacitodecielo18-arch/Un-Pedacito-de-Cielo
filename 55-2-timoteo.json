@@ -1,0 +1,25 @@
+{
+  "nombre": "2 Timoteo",
+  "testamento": "Nuevo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Yo, Pablo, elegido por la voluntad de Dios para ser apóstol de Cristo Jesús escribo esta carta. Fui enviado para contarles a otros acerca de la vida que él ha prometido mediante la fe en Cristo Jesús."
+    },
+    "2": {
+      "1": "Timoteo, mi querido hijo, sé fuerte por medio de la gracia que Dios te da en Cristo Jesús.",
+      "2": "Me has oído enseñar verdades, que han sido confirmadas por muchos testigos confiables. Ahora enseña estas verdades a otras personas dignas de confianza que estén capacitadas para transmitirlas a otros."
+    },
+    "3": {
+      "1": "Timoteo, es bueno que sepas que, en los últimos días, habrá tiempos muy difíciles.",
+      "2": "Pues la gente sólo tendrá amor por sí misma y por su dinero. Serán fanfarrones y orgullosos, se burlarán de Dios, serán desobedientes a sus padres y malagradecidos.",
+      "3": "No amarán ni perdonarán; calumniarán a otros y no tendrán control propio."
+    },
+    "4": {
+      "1": "En presencia de Dios y de Cristo Jesús —quien un día juzgará a los vivos y a los muertos cuando venga para establecer su reino— te pido encarecidamente:",
+      "2": "predica la palabra de Dios. Mantente preparado, sea o no el tiempo oportuno.",
+      "3": "Llegará el tiempo en que la gente no escuchará más la sólida y sana enseñanza. Seguirán sus propios deseos y buscarán maestros que les digan lo que sus oídos se mueren por oír.",
+      "4": "Rechazarán la verdad e irán tras de mitos."
+    },
+    "5": {}
+  }
+}

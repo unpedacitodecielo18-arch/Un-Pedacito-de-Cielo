@@ -1,0 +1,25 @@
+{
+  "nombre": "Rut",
+  "testamento": "Antiguo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "En los días en que los jueces gobernaban Israel, un hambre severa azotó la tierra. Por eso, un hombre de Belén de Judá dejó su casa y se fue a vivir a la tierra de Moab, junto con su esposa y sus dos hijos."
+    },
+    "2": {
+      "1": "Había en Belén un hombre rico y muy influyente llamado Booz que era pariente de Elimelec, el esposo de Noemí.",
+      "2": "Un día Rut la moabita le dijo a Noemí: —Déjame ir a los campos de cosecha a ver si alguien en su bondad me permite recoger las espigas de grano dejadas atrás."
+    },
+    "3": {
+      "1": "Un día Noemí le dijo a Rut: —Hija mía, es tiempo de que yo te encuentre un hogar permanente para que tengas un porvenir asegurado.",
+      "2": "Booz es nuestro pariente cercano, y él ha sido muy amable al dejarte recoger grano con las jóvenes. Esta noche estará aventando cebada en el campo de trillar.",
+      "3": "Mira, haz lo que te digo. Báñate, perfúmate y vístete con tu ropa más linda. Después baja al campo de trillar pero no dejes que Booz te vea hasta que termine de comer y de beber."
+    },
+    "4": {
+      "1": "Booz fue a la puerta de la ciudad y allí se sentó. En ese momento, pasó por ese lugar el redentor de la familia que Booz había mencionado, así que lo llamó: —",
+      "2": "Enseguida Booz llamó a diez líderes del pueblo y les pidió que se sentaran allí como testigos.",
+      "3": "Entonces Booz le dijo al redentor de la familia: —Tú conoces a Noemí, la que volvió de Moab. Está por vender el terreno que pertenecía a Elimelec, nuestro pariente.",
+      "4": "Pensé que yo debía hablar contigo para que pudieras redimir la tierra si deseas hacerlo. Si quieres la tierra, entonces cómprala ahora en presencia de estos testigos. Pero si no quieres la tierra, házmelo saber ahora mismo, porque, después de ti, soy el pariente más cercano para redimirla. El hombre respondió: —Muy bien, yo la redimo."
+    },
+    "5": {}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "nombre": "Filipenses",
+  "testamento": "Nuevo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Saludos de Pablo y de Timoteo, esclavos de Cristo Jesús. Yo, Pablo, escribo esta carta a todo el pueblo santo de Dios en Filipos que pertenece a Cristo Jesús, incluidos los ancianos gobernantes y los diáconos."
+    },
+    "2": {
+      "1": "¿Hay algún estímulo en pertenecer a Cristo? ¿Existe algún consuelo en su amor? ¿Tenemos en conjunto alguna comunión en el Espíritu? ¿Tienen ustedes un corazón tierno y compasivo?",
+      "2": "Entonces, háganme verdaderamente feliz poniéndose de acuerdo de todo corazón entre ustedes, amándose unos a otros y trabajando juntos con un mismo pensamiento y un mismo propósito."
+    },
+    "3": {
+      "1": "Mis amados hermanos, pase lo que pase, alégrense en el Señor. Nunca me canso de decirles estas cosas y lo hago para proteger su fe.",
+      "2": "Cuídense de esos perros, de esa gente que hace lo malo, esos mutiladores que les dicen que deben circuncidarse para ser salvos.",
+      "3": "Pues los que adoramos por medio del Espíritu de Dios somos los verdaderos circuncisos. Confiamos en lo que Cristo Jesús hizo por nosotros. No depositamos ninguna confianza en esfuerzos humanos"
+    },
+    "4": {
+      "1": "Por lo tanto, mis amados hermanos, manténganse fieles al Señor. Los amo y anhelo verlos, mis queridos amigos, porque ustedes son mi alegría y la corona que recibo por mi trabajo.",
+      "2": "Ahora les ruego a Evodia y a Síntique, dado que pertenecen al Señor, que arreglen su desacuerdo.",
+      "3": "Y te pido a ti, mi fiel colaborador, que ayudes a esas dos mujeres, porque trabajaron mucho a mi lado para dar a conocer a otros la Buena Noticia. Trabajaron junto con Clemente y mis demás colaboradores, cuyos nombres están escritos en el libro de la vida.",
+      "4": "Estén siempre llenos de alegría en el Señor. Lo repito, ¡alégrense!"
+    },
+    "5": {}
+  }
+}

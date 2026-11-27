@@ -1,0 +1,464 @@
+[
+  {
+    "id": 1,
+    "nombre": "Génesis",
+    "testamento": "Antiguo Testamento",
+    "archivo": "01-genesis.json",
+    "capitulos": 50
+  },
+  {
+    "id": 2,
+    "nombre": "Éxodo",
+    "testamento": "Antiguo Testamento",
+    "archivo": "02-exodo.json",
+    "capitulos": 33
+  },
+  {
+    "id": 3,
+    "nombre": "Levítico",
+    "testamento": "Antiguo Testamento",
+    "archivo": "03-levitico.json",
+    "capitulos": 27
+  },
+  {
+    "id": 4,
+    "nombre": "Números",
+    "testamento": "Antiguo Testamento",
+    "archivo": "04-numeros.json",
+    "capitulos": 36
+  },
+  {
+    "id": 5,
+    "nombre": "Deuteronomio",
+    "testamento": "Antiguo Testamento",
+    "archivo": "05-deuteronomio.json",
+    "capitulos": 31
+  },
+  {
+    "id": 6,
+    "nombre": "Josué",
+    "testamento": "Antiguo Testamento",
+    "archivo": "06-josue.json",
+    "capitulos": 24
+  },
+  {
+    "id": 7,
+    "nombre": "Jueces",
+    "testamento": "Antiguo Testamento",
+    "archivo": "07-jueces.json",
+    "capitulos": 22
+  },
+  {
+    "id": 8,
+    "nombre": "Rut",
+    "testamento": "Antiguo Testamento",
+    "archivo": "08-rut.json",
+    "capitulos": 5
+  },
+  {
+    "id": 9,
+    "nombre": "1 Samuel",
+    "testamento": "Antiguo Testamento",
+    "archivo": "09-1-samuel.json",
+    "capitulos": 31
+  },
+  {
+    "id": 10,
+    "nombre": "2 Samuel",
+    "testamento": "Antiguo Testamento",
+    "archivo": "10-2-samuel.json",
+    "capitulos": 25
+  },
+  {
+    "id": 11,
+    "nombre": "1 Reyes",
+    "testamento": "Antiguo Testamento",
+    "archivo": "11-1-reyes.json",
+    "capitulos": 23
+  },
+  {
+    "id": 12,
+    "nombre": "2 Reyes",
+    "testamento": "Antiguo Testamento",
+    "archivo": "12-2-reyes.json",
+    "capitulos": 23
+  },
+  {
+    "id": 13,
+    "nombre": "1 Crónicas",
+    "testamento": "Antiguo Testamento",
+    "archivo": "13-1-cronicas.json",
+    "capitulos": 30
+  },
+  {
+    "id": 14,
+    "nombre": "2 Crónicas",
+    "testamento": "Antiguo Testamento",
+    "archivo": "14-2-cronicas.json",
+    "capitulos": 28
+  },
+  {
+    "id": 15,
+    "nombre": "Esdras",
+    "testamento": "Antiguo Testamento",
+    "archivo": "15-esdras.json",
+    "capitulos": 11
+  },
+  {
+    "id": 16,
+    "nombre": "Nehemías",
+    "testamento": "Antiguo Testamento",
+    "archivo": "16-nehemias.json",
+    "capitulos": 14
+  },
+  {
+    "id": 17,
+    "nombre": "Ester",
+    "testamento": "Antiguo Testamento",
+    "archivo": "17-ester.json",
+    "capitulos": 10
+  },
+  {
+    "id": 18,
+    "nombre": "Job",
+    "testamento": "Antiguo Testamento",
+    "archivo": "18-job.json",
+    "capitulos": 41
+  },
+  {
+    "id": 19,
+    "nombre": "Salmos",
+    "testamento": "Antiguo Testamento",
+    "archivo": "19-salmos.json",
+    "capitulos": 143
+  },
+  {
+    "id": 20,
+    "nombre": "Proverbios",
+    "testamento": "Antiguo Testamento",
+    "archivo": "20-proverbios.json",
+    "capitulos": 30
+  },
+  {
+    "id": 21,
+    "nombre": "Eclesiastés",
+    "testamento": "Antiguo Testamento",
+    "archivo": "21-eclesiastes.json",
+    "capitulos": 13
+  },
+  {
+    "id": 22,
+    "nombre": "Cantar de los Cantares",
+    "testamento": "Antiguo Testamento",
+    "archivo": "22-cantar-de-los-cantares.json",
+    "capitulos": 9
+  },
+  {
+    "id": 23,
+    "nombre": "Isaías",
+    "testamento": "Antiguo Testamento",
+    "archivo": "23-isaias.json",
+    "capitulos": 28
+  },
+  {
+    "id": 24,
+    "nombre": "Jeremías",
+    "testamento": "Antiguo Testamento",
+    "archivo": "24-jeremias.json",
+    "capitulos": 40
+  },
+  {
+    "id": 25,
+    "nombre": "Lamentaciones",
+    "testamento": "Antiguo Testamento",
+    "archivo": "25-lamentaciones.json",
+    "capitulos": 5
+  },
+  {
+    "id": 26,
+    "nombre": "Ezequiel",
+    "testamento": "Antiguo Testamento",
+    "archivo": "26-ezequiel.json",
+    "capitulos": 32
+  },
+  {
+    "id": 27,
+    "nombre": "Daniel",
+    "testamento": "Antiguo Testamento",
+    "archivo": "27-daniel.json",
+    "capitulos": 13
+  },
+  {
+    "id": 28,
+    "nombre": "Oseas",
+    "testamento": "Antiguo Testamento",
+    "archivo": "28-oseas.json",
+    "capitulos": 14
+  },
+  {
+    "id": 29,
+    "nombre": "Joel",
+    "testamento": "Antiguo Testamento",
+    "archivo": "29-joel.json",
+    "capitulos": 4
+  },
+  {
+    "id": 30,
+    "nombre": "Amós",
+    "testamento": "Antiguo Testamento",
+    "archivo": "30-amos.json",
+    "capitulos": 10
+  },
+  {
+    "id": 31,
+    "nombre": "Abdías",
+    "testamento": "Antiguo Testamento",
+    "archivo": "31-abdias.json",
+    "capitulos": 1
+  },
+  {
+    "id": 32,
+    "nombre": "Jonás",
+    "testamento": "Antiguo Testamento",
+    "archivo": "32-jonas.json",
+    "capitulos": 3
+  },
+  {
+    "id": 33,
+    "nombre": "Miqueas",
+    "testamento": "Antiguo Testamento",
+    "archivo": "33-miqueas.json",
+    "capitulos": 7
+  },
+  {
+    "id": 34,
+    "nombre": "Nahum",
+    "testamento": "Antiguo Testamento",
+    "archivo": "34-nahum.json",
+    "capitulos": 4
+  },
+  {
+    "id": 35,
+    "nombre": "Habacuc",
+    "testamento": "Antiguo Testamento",
+    "archivo": "35-habacuc.json",
+    "capitulos": 4
+  },
+  {
+    "id": 36,
+    "nombre": "Sofonías",
+    "testamento": "Antiguo Testamento",
+    "archivo": "36-sofonias.json",
+    "capitulos": 4
+  },
+  {
+    "id": 37,
+    "nombre": "Hageo",
+    "testamento": "Antiguo Testamento",
+    "archivo": "37-hageo.json",
+    "capitulos": 3
+  },
+  {
+    "id": 38,
+    "nombre": "Zacarías",
+    "testamento": "Antiguo Testamento",
+    "archivo": "38-zacarias.json",
+    "capitulos": 13
+  },
+  {
+    "id": 39,
+    "nombre": "Malaquías",
+    "testamento": "Antiguo Testamento",
+    "archivo": "39-malaquias.json",
+    "capitulos": 5
+  },
+  {
+    "id": 40,
+    "nombre": "Mateo",
+    "testamento": "Nuevo Testamento",
+    "archivo": "40-mateo.json",
+    "capitulos": 28
+  },
+  {
+    "id": 41,
+    "nombre": "Marcos",
+    "testamento": "Nuevo Testamento",
+    "archivo": "41-marcos.json",
+    "capitulos": 17
+  },
+  {
+    "id": 42,
+    "nombre": "Lucas",
+    "testamento": "Nuevo Testamento",
+    "archivo": "42-lucas.json",
+    "capitulos": 25
+  },
+  {
+    "id": 43,
+    "nombre": "Juan",
+    "testamento": "Nuevo Testamento",
+    "archivo": "43-juan.json",
+    "capitulos": 22
+  },
+  {
+    "id": 44,
+    "nombre": "Hechos de los Apóstoles",
+    "testamento": "Nuevo Testamento",
+    "archivo": "44-hechos-de-los-apostoles.json",
+    "capitulos": 28
+  },
+  {
+    "id": 45,
+    "nombre": "Romanos",
+    "testamento": "Nuevo Testamento",
+    "archivo": "45-romanos.json",
+    "capitulos": 17
+  },
+  {
+    "id": 46,
+    "nombre": "1 Corintios",
+    "testamento": "Nuevo Testamento",
+    "archivo": "46-1-corintios.json",
+    "capitulos": 17
+  },
+  {
+    "id": 47,
+    "nombre": "2 Corintios",
+    "testamento": "Nuevo Testamento",
+    "archivo": "47-2-corintios.json",
+    "capitulos": 14
+  },
+  {
+    "id": 48,
+    "nombre": "Gálatas",
+    "testamento": "Nuevo Testamento",
+    "archivo": "48-galatas.json",
+    "capitulos": 7
+  },
+  {
+    "id": 49,
+    "nombre": "Efesios",
+    "testamento": "Nuevo Testamento",
+    "archivo": "49-efesios.json",
+    "capitulos": 7
+  },
+  {
+    "id": 50,
+    "nombre": "Filipenses",
+    "testamento": "Nuevo Testamento",
+    "archivo": "50-filipenses.json",
+    "capitulos": 5
+  },
+  {
+    "id": 51,
+    "nombre": "Colosenses",
+    "testamento": "Nuevo Testamento",
+    "archivo": "51-colosenses.json",
+    "capitulos": 5
+  },
+  {
+    "id": 52,
+    "nombre": "1 Tesalonicenses",
+    "testamento": "Nuevo Testamento",
+    "archivo": "52-1-tesalonicenses.json",
+    "capitulos": 6
+  },
+  {
+    "id": 53,
+    "nombre": "2 Tesalonicenses",
+    "testamento": "Nuevo Testamento",
+    "archivo": "53-2-tesalonicenses.json",
+    "capitulos": 4
+  },
+  {
+    "id": 54,
+    "nombre": "1 Timoteo",
+    "testamento": "Nuevo Testamento",
+    "archivo": "54-1-timoteo.json",
+    "capitulos": 7
+  },
+  {
+    "id": 55,
+    "nombre": "2 Timoteo",
+    "testamento": "Nuevo Testamento",
+    "archivo": "55-2-timoteo.json",
+    "capitulos": 5
+  },
+  {
+    "id": 56,
+    "nombre": "Tito",
+    "testamento": "Nuevo Testamento",
+    "archivo": "56-tito.json",
+    "capitulos": 4
+  },
+  {
+    "id": 57,
+    "nombre": "Filemón",
+    "testamento": "Nuevo Testamento",
+    "archivo": "57-filemon.json",
+    "capitulos": 1
+  },
+  {
+    "id": 58,
+    "nombre": "Hebreos",
+    "testamento": "Nuevo Testamento",
+    "archivo": "58-hebreos.json",
+    "capitulos": 14
+  },
+  {
+    "id": 59,
+    "nombre": "Santiago",
+    "testamento": "Nuevo Testamento",
+    "archivo": "59-santiago.json",
+    "capitulos": 6
+  },
+  {
+    "id": 60,
+    "nombre": "1 Pedro",
+    "testamento": "Nuevo Testamento",
+    "archivo": "60-1-pedro.json",
+    "capitulos": 6
+  },
+  {
+    "id": 61,
+    "nombre": "2 Pedro",
+    "testamento": "Nuevo Testamento",
+    "archivo": "61-2-pedro.json",
+    "capitulos": 4
+  },
+  {
+    "id": 62,
+    "nombre": "1 Juan",
+    "testamento": "Nuevo Testamento",
+    "archivo": "62-1-juan.json",
+    "capitulos": 6
+  },
+  {
+    "id": 63,
+    "nombre": "2 Juan",
+    "testamento": "Nuevo Testamento",
+    "archivo": "63-2-juan.json",
+    "capitulos": 1
+  },
+  {
+    "id": 64,
+    "nombre": "3 Juan",
+    "testamento": "Nuevo Testamento",
+    "archivo": "64-3-juan.json",
+    "capitulos": 1
+  },
+  {
+    "id": 65,
+    "nombre": "Judas",
+    "testamento": "Nuevo Testamento",
+    "archivo": "65-judas.json",
+    "capitulos": 1
+  },
+  {
+    "id": 66,
+    "nombre": "Apocalipsis",
+    "testamento": "Nuevo Testamento",
+    "archivo": "66-apocalipsis.json",
+    "capitulos": 22
+  }
+]

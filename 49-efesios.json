@@ -1,0 +1,40 @@
+{
+  "nombre": "Efesios",
+  "testamento": "Nuevo Testamento",
+  "capitulos": {
+    "1": {
+      "1": "Yo, Pablo, elegido por la voluntad de Dios para ser apóstol de Cristo Jesús, escribo esta carta al pueblo santo de Dios en Éfeso, fieles seguidores de Cristo Jesús."
+    },
+    "2": {
+      "1": "Antes ustedes estaban muertos a causa de su desobediencia y sus muchos pecados.",
+      "2": "Vivían en pecado, igual que el resto de la gente, obedeciendo al diablo —el líder de los poderes del mundo invisible —, quien es el espíritu que actúa en el corazón de los que se niegan a obedecer a Dios."
+    },
+    "3": {
+      "1": "Cuando pienso en todo esto, yo, Pablo, prisionero de Cristo Jesús por el bien de ustedes, los gentiles …",
+      "2": "A propósito, doy por sentado que ustedes saben que Dios me encargó de manera especial extenderles su gracia a ustedes, los gentiles.",
+      "3": "Tal como antes les escribí brevemente, Dios mismo me reveló su misterioso plan."
+    },
+    "4": {
+      "1": "Por lo tanto, yo, prisionero por servir al Señor, les suplico que lleven una vida digna del llamado que han recibido de Dios, porque en verdad han sido llamados.",
+      "2": "Sean siempre humildes y amables. Sean pacientes unos con otros y tolérense las faltas por amor.",
+      "3": "Hagan todo lo posible por mantenerse unidos en el Espíritu y enlazados mediante la paz.",
+      "4": "Pues hay un solo cuerpo y un solo Espíritu, tal como ustedes fueron llamados a una misma esperanza gloriosa para el futuro."
+    },
+    "5": {
+      "1": "Por lo tanto, imiten a Dios en todo lo que hagan porque ustedes son sus hijos queridos.",
+      "2": "Vivan una vida llena de amor, siguiendo el ejemplo de Cristo. Él nos amó y se ofreció a sí mismo como sacrificio por nosotros, como aroma agradable a Dios.",
+      "3": "Que no haya ninguna inmoralidad sexual, impureza ni avaricia entre ustedes.",
+      "4": "Los cuentos obscenos, las conversaciones necias y los chistes groseros no son para ustedes. En cambio, que haya una actitud de agradecimiento a Dios.",
+      "5": "Pueden estar seguros de que ninguna persona inmoral, impura o avara heredará el reino de Cristo y de Dios. Pues el avaro es un idólatra, que adora las cosas de este mundo."
+    },
+    "6": {
+      "1": "Hijos, obedezcan a sus padres porque ustedes pertenecen al Señor, pues esto es lo correcto.",
+      "2": "Honra a tu padre y a tu madre. Ese es el primer mandamiento que contiene una promesa:",
+      "3": "si honras a tu padre y a tu madre, te irá bien y tendrás una larga vida en la tierra.",
+      "4": "Padres, no hagan enojar a sus hijos con la forma en que los tratan. Más bien, críenlos con la disciplina e instrucción que proviene del Señor.",
+      "5": "Esclavos, obedezcan a sus amos terrenales con profundo respeto y temor.",
+      "6": "Traten de agradarlos todo el tiempo, no sólo cuando ellos los observan. Como esclavos de Cristo, hagan la voluntad de Dios con todo el corazón."
+    },
+    "7": {}
+  }
+}
