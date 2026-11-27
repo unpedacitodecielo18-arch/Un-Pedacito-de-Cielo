@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santa Biblia - Reina-Valera 1960</title>
+    <title>Santa Biblia</title>
     <style>
         :root {
             --bg-color: #f8f9fa;
@@ -174,74 +174,73 @@
 </main>
 
 <script>
-    // Lista estándar de los 66 libros de la Biblia y sus posibles nombres de archivo en la raíz (./archivo.json)
     const BOOKS = [
-        { name: "Génesis", file: "genesis.json" },
-        { name: "Éxodo", file: "exodo.json" },
-        { name: "Levítico", file: "levitico.json" },
-        { name: "Números", file: "numeros.json" },
-        { name: "Deuteronomio", file: "deuteronomio.json" },
-        { name: "Josué", file: "josue.json" },
-        { name: "Jueces", file: "jueces.json" },
-        { name: "Rut", file: "rut.json" },
-        { name: "1 Samuel", file: "1_samuel.json" },
-        { name: "2 Samuel", file: "2_samuel.json" },
-        { name: "1 Reyes", file: "1_reyes.json" },
-        { name: "2 Reyes", file: "2_reyes.json" },
-        { name: "1 Crónicas", file: "1_cronicas.json" },
-        { name: "2 Crónicas", file: "2_cronicas.json" },
-        { name: "Esdras", file: "esdras.json" },
-        { name: "Nehemías", file: "nehemias.json" },
-        { name: "Ester", file: "ester.json" },
-        { name: "Job", file: "job.json" },
-        { name: "Salmos", file: "salmos.json" },
-        { name: "Proverbios", file: "proverbios.json" },
-        { name: "Eclesiastés", file: "eclesiastes.json" },
-        { name: "Cantares", file: "cantares.json" },
-        { name: "Isaías", file: "isaias.json" },
-        { name: "Jeremías", file: "jeremias.json" },
-        { name: "Lamentaciones", file: "lamentaciones.json" },
-        { name: "Ezequiel", file: "ezequiel.json" },
-        { name: "Daniel", file: "daniel.json" },
-        { name: "Oseas", file: "oseas.json" },
-        { name: "Joel", file: "joel.json" },
-        { name: "Amós", file: "amos.json" },
-        { name: "Abdías", file: "abdias.json" },
-        { name: "Jonás", file: "jonas.json" },
-        { name: "Miqueas", file: "miqueas.json" },
-        { name: "Nahúm", file: "nahum.json" },
-        { name: "Habacuc", file: "habacuc.json" },
-        { name: "Sofonías", file: "sofonias.json" },
-        { name: "Hageo", file: "hageo.json" },
-        { name: "Zacarías", file: "zacarias.json" },
-        { name: "Malaquías", file: "malaquias.json" },
-        { name: "Mateo", file: "mateo.json" },
-        { name: "Marcos", file: "marcos.json" },
-        { name: "Lucas", file: "lucas.json" },
-        { name: "Juan", file: "juan.json" },
-        { name: "Hechos", file: "hechos.json" },
-        { name: "Romanos", file: "romanos.json" },
-        { name: "1 Corintios", file: "1_corintios.json" },
-        { name: "2 Corintios", file: "2_corintios.json" },
-        { name: "Gálatas", file: "galatas.json" },
-        { name: "Efesios", file: "efesios.json" },
-        { name: "Filipenses", file: "filipenses.json" },
-        { name: "Colosenses", file: "colosenses.json" },
-        { name: "1 Tesalonicenses", file: "1_tesalonicenses.json" },
-        { name: "2 Tesalonicenses", file: "2_tesalonicenses.json" },
-        { name: "1 Timoteo", file: "1_timoteo.json" },
-        { name: "2 Timoteo", file: "2_timoteo.json" },
-        { name: "Tito", file: "tito.json" },
-        { name: "Filemón", file: "filemon.json" },
-        { name: "Hebreos", file: "hebreos.json" },
-        { name: "Santiago", file: "santiago.json" },
-        { name: "1 Pedro", file: "1_pedro.json" },
-        { name: "2 Pedro", file: "2_pedro.json" },
-        { name: "1 Juan", file: "1_juan.json" },
-        { name: "2 Juan", file: "2_juan.json" },
-        { name: "3 Juan", file: "3_juan.json" },
-        { name: "Judas", file: "judas.json" },
-        { name: "Apocalipsis", file: "apocalipsis.json" }
+        { name: "Génesis", file: "01-genesis.json" },
+        { name: "Éxodo", file: "02-exodo.json" },
+        { name: "Levítico", file: "03-levitico.json" },
+        { name: "Números", file: "04-numeros.json" },
+        { name: "Deuteronomio", file: "05-deuteronomio.json" },
+        { name: "Josué", file: "06-josue.json" },
+        { name: "Jueces", file: "07-jueces.json" },
+        { name: "Rut", file: "08-rut.json" },
+        { name: "1 Samuel", file: "09-1-samuel.json" },
+        { name: "2 Samuel", file: "10-2-samuel.json" },
+        { name: "1 Reyes", file: "11-1-reyes.json" },
+        { name: "2 Reyes", file: "12-2-reyes.json" },
+        { name: "1 Crónicas", file: "13-1-cronicas.json" },
+        { name: "2 Crónicas", file: "14-2-cronicas.json" },
+        { name: "Esdras", file: "15-esdras.json" },
+        { name: "Nehemías", file: "16-nehemias.json" },
+        { name: "Ester", file: "17-ester.json" },
+        { name: "Job", file: "18-job.json" },
+        { name: "Salmos", file: "19-salmos.json" },
+        { name: "Proverbios", file: "20-proverbios.json" },
+        { name: "Eclesiastés", file: "21-eclesiastés.json" },
+        { name: "Cantares", file: "22-cantar-de-los-cantares.json" },
+        { name: "Isaías", file: "23-isaias.json" },
+        { name: "Jeremías", file: "24-jeremias.json" },
+        { name: "Lamentaciones", file: "25-lamentaciones.json" },
+        { name: "Ezequiel", file: "26-ezequiel.json" },
+        { name: "Daniel", file: "27-daniel.json" },
+        { name: "Oseas", file: "28-oseas.json" },
+        { name: "Joel", file: "29-joel.json" },
+        { name: "Amós", file: "30-amos.json" },
+        { name: "Abdías", file: "31-abdias.json" },
+        { name: "Jonás", file: "32-jonas.json" },
+        { name: "Miqueas", file: "33-miqueas.json" },
+        { name: "Nahúm", file: "34-nahum.json" },
+        { name: "Habacuc", file: "35-habacuc.json" },
+        { name: "Sofonías", file: "36-sofonias.json" },
+        { name: "Hageo", file: "37-hageo.json" },
+        { name: "Zacarías", file: "38-zacarias.json" },
+        { name: "Malaquías", file: "39-malaquias.json" },
+        { name: "Mateo", file: "40-mateo.json" },
+        { name: "Marcos", file: "41-marcos.json" },
+        { name: "Lucas", file: "42-lucas.json" },
+        { name: "Juan", file: "43-juan.json" },
+        { name: "Hechos", file: "44-hechos-de-los-apostoles.json" },
+        { name: "Romanos", file: "45-romanos.json" },
+        { name: "1 Corintios", file: "46-1-corintios.json" },
+        { name: "2 Corintios", file: "47-2-corintios.json" },
+        { name: "Gálatas", file: "48-galatas.json" },
+        { name: "Efesios", file: "49-efesios.json" },
+        { name: "Filipenses", file: "50-filipenses.json" },
+        { name: "Colosenses", file: "51-colosenses.json" },
+        { name: "1 Tesalonicenses", file: "52-1-tesalonicenses.json" },
+        { name: "2 Tesalonicenses", file: "53-2-tesalonicenses.json" },
+        { name: "1 Timoteo", file: "54-1-timoteo.json" },
+        { name: "2 Timoteo", file: "55-2-timoteo.json" },
+        { name: "Tito", file: "56-tito.json" },
+        { name: "Filemón", file: "57-filemon.json" },
+        { name: "Hebreos", file: "58-hebreos.json" },
+        { name: "Santiago", file: "59-santiago.json" },
+        { name: "1 Pedro", file: "60-1-pedro.json" },
+        { name: "2 Pedro", file: "61-2-pedro.json" },
+        { name: "1 Juan", file: "62-1-juan.json" },
+        { name: "2 Juan", file: "63-2-juan.json" },
+        { name: "3 Juan", file: "64-3-juan.json" },
+        { name: "Judas", file: "65-judas.json" },
+        { name: "Apocalipsis", file: "66-apocalipsis.json" }
     ];
 
     let currentBookData = null;
@@ -265,19 +264,15 @@
         loadBook();
     }
 
-    // Normaliza distintas estructuras comunes de JSON bíblicos a un arreglo de capítulos con versículos
     function normalizeChapters(data) {
-        // Caso 1: Objeto con propiedad 'chapters' o 'capitulos'
         if (data && !Array.isArray(data)) {
             if (Array.isArray(data.chapters)) return normalizeChapters(data.chapters);
             if (Array.isArray(data.capitulos)) return normalizeChapters(data.capitulos);
-            // Caso 2: Objeto con claves "1", "2", ...
             const keys = Object.keys(data).filter(k => !isNaN(k)).sort((a,b) => Number(a) - Number(b));
             if (keys.length > 0) {
                 return keys.map(k => data[k]);
             }
         }
-        // Caso 3: Arreglo directo de capítulos
         if (Array.isArray(data)) {
             return data.map(ch => {
                 if (Array.isArray(ch)) return ch;
@@ -303,8 +298,8 @@
         chapterSelect.disabled = true;
 
         try {
-            // Carga directa desde la raíz (sin subcarpeta)
-            const response = await fetch(`./${book.file}`);
+            const encodedFile = encodeURIComponent(book.file);
+            const response = await fetch(`./${encodedFile}`);
             if (!response.ok) throw new Error(`No se encontró ${book.file} en la raíz`);
             const rawData = await response.json();
             
@@ -325,7 +320,7 @@
             readerContainer.innerHTML = `
                 <div class="status-msg">
                     <p>⚠️ No se pudo cargar el archivo <strong>${book.file}</strong> en la raíz.</p>
-                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Verifica que todos tus archivos <code>.json</code> estén subidos exactamente junto a <code>biblia.html</code> (en la misma carpeta raíz) y que sus nombres coincidan en minúsculas y sin tildes (ej. <code>genesis.json</code>, <code>1_samuel.json</code>).</p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Verifica que <code>${book.file}</code> esté en la misma carpeta raíz que <code>biblia.html</code> y que su contenido JSON sea válido.</p>
                 </div>`;
             prevBtn.disabled = true;
             nextBtn.disabled = true;
